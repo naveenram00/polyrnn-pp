@@ -24,12 +24,12 @@ class PolygonModel(object):
         """Creates and loads PolygonModel. """
 
         #check whether a supported version of tensorflow is installed
-        if (
-                (LooseVersion(tf.__version__) < LooseVersion('1.3.0')) 
-             or (LooseVersion(tf.__version__) > LooseVersion('1.3.1'))
-           ):
-            err_string = 'you are using tensorflow version ' + tf.__version__ + ' but only versions 1.3.0 to 1.3.1 are supported'
-            raise NotImplementedError(err_string)
+        # if (
+        #         (LooseVersion(tf.__version__) < LooseVersion('1.3.0')) 
+        #      or (LooseVersion(tf.__version__) > LooseVersion('1.3.1'))
+        #    ):
+        #     err_string = 'you are using tensorflow version ' + tf.__version__ + ' but only versions 1.3.0 to 1.3.1 are supported'
+        #     raise NotImplementedError(err_string)
 
         if graph is None:
             self.graph = tf.Graph()
